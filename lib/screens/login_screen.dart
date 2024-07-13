@@ -71,6 +71,7 @@ class LoginScreen extends StatelessWidget {
                   ),
                   child: const Text('Sign in'),
                 ),
+                const SizedBox(height: 10),
                 TextButton(
                   style: TextButton.styleFrom(
                     backgroundColor: Colors.transparent,
@@ -78,6 +79,7 @@ class LoginScreen extends StatelessWidget {
                   onPressed: () {},
                   child: const Text('Forgot Password?'),
                 ),
+                const SizedBox(height: 10),
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[
