@@ -15,6 +15,15 @@ class ThemeBuilder {
       useMaterial3: true,
       splashColor: ThemeColors.primaryColor,
       colorScheme: ColorScheme.fromSeed(seedColor: ThemeColors.primaryColor),
+      iconButtonTheme: IconButtonThemeData(
+        style: IconButton.styleFrom(
+          backgroundColor: ThemeColors.primaryVariantColor,
+          fixedSize: const Size.square(60),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(10),
+          ),
+        ),
+      ),
       inputDecorationTheme: InputDecorationTheme(
         filled: true,
         fillColor: ThemeColors.primaryColor,

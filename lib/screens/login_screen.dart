@@ -96,22 +96,19 @@ class LoginScreen extends StatelessWidget {
                 ),
                 const SizedBox(height: 20),
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    ElevatedButton.icon(
+                    IconButton.filled(
                       onPressed: () {},
                       icon: const Icon(FontAwesome.facebook_f_brand),
-                      label: const Text('Facebook'),
                     ),
-                    ElevatedButton.icon(
+                    IconButton.filled(
                       onPressed: () {},
                       icon: const Icon(FontAwesome.google_brand),
-                      label: const Text('Google'),
                     ),
-                    ElevatedButton.icon(
+                    IconButton.filled(
                       onPressed: () {},
                       icon: const Icon(FontAwesome.apple_brand),
-                      label: const Text('Apple'),
                     ),
                   ],
                 ),
@@ -129,7 +126,8 @@ class LoginScreen extends StatelessWidget {
                         child: Text(
                           'Sign up',
                           style: TextStyle(
-                            color: ThemeColors.blue,
+                            color: ThemeColors.primaryVariantColor,
+                            fontWeight: FontWeight.w900,
                           ),
                         ),
                       ),
