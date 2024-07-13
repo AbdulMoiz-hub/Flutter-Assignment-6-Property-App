@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeBuilder.buildTheme(context),
+      theme: ThemeBuilder.buildTheme(context, Brightness.light),
       onGenerateRoute: RoutesGenerator.onGenerateRoute,
     );
   }

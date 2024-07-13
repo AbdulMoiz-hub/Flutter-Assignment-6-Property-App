@@ -24,12 +24,12 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: Center(
         child: Icon(
           FontAwesome.heart_pulse_solid,
           size: 100,
-          color: ThemeColors.primaryVariantColor,
+          color: ThemeColors.getThemeColors(context).primaryVariantColor,
         ),
       ),
     );
