@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_assignment_6_property_app/constants/theme_data.dart';
 import 'package:flutter_assignment_6_property_app/helpers/gap.dart';
+import 'package:flutter_assignment_6_property_app/routes/route_path.dart';
 import 'package:icons_plus/icons_plus.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -150,7 +151,9 @@ class _LoginScreenState extends State<LoginScreen> {
 
   ElevatedButton _signinButton() {
     return ElevatedButton(
-      onPressed: () {},
+      onPressed: () {
+        Navigator.popAndPushNamed(context, RoutePath.home);
+      },
       style: ElevatedButton.styleFrom(
         backgroundColor: themeColors.primaryVariantColor,
         foregroundColor: themeColors.primaryColor,

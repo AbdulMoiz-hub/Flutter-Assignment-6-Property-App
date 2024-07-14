@@ -5,9 +5,52 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(
-        child: Text('Home Screen'),
+    return Scaffold(
+      appBar: AppBar(
+        title: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            const Text('Location'),
+            const Text(
+              'Los Angeles, CA',
+              style: TextStyle(
+                fontSize: 12,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ],
+        ),
+      ),
+      body: Padding(
+        padding: const EdgeInsets.all(20.0),
+        child: Column(
+          children: [
+            const Text(
+              'Discover Best Suitable Property',
+              textAlign: TextAlign.left,
+            ),
+            Row(
+              children: [
+                TextButton(
+                  onPressed: () {},
+                  child: const Text('House'),
+                ),
+                TextButton(
+                  onPressed: () {},
+                  child: const Text('Apartment'),
+                ),
+                TextButton(
+                  onPressed: () {},
+                  child: const Text('Flot'),
+                ),
+                TextButton(
+                  onPressed: () {},
+                  child: const Text('Flot'),
+                ),
+              ],
+            ),
+          ],
+        ),
       ),
     );
   }
