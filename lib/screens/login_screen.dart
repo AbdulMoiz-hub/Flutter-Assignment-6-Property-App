@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_assignment_6_property_app/constants/theme_data.dart';
 import 'package:flutter_assignment_6_property_app/helpers/gap.dart';
 import 'package:flutter_assignment_6_property_app/routes/route_path.dart';
+import 'package:flutter_assignment_6_property_app/theme/theme_colors.dart';
 import 'package:icons_plus/icons_plus.dart';
 
 class LoginScreen extends StatefulWidget {

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_assignment_6_property_app/constants/theme_data.dart';
+import 'package:flutter_assignment_6_property_app/theme/theme_builder.dart';
 import 'package:flutter_assignment_6_property_app/routes/routes_generator.dart';
 
 void main() {

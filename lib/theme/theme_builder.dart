@@ -1,42 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_assignment_6_property_app/theme/theme_colors.dart';
 import 'package:google_fonts/google_fonts.dart';
-
-abstract class ThemeColors {
-  Color primaryColor = const Color(0xFFeaf1ff);
-  Color primaryVariantColor = const Color(0xFF0e3146);
-  Color white = const Color(0xFFFFFFFF);
-  Color blue = const Color(0xFF4a85fd);
-  Color textColor = const Color(0xFF000000);
-
-  static ThemeColors getThemeColors(BuildContext context) {
-    final Brightness brightness = Theme.of(context).brightness;
-    if (brightness == Brightness.dark) {
-      return DarkThemeColors();
-    } else {
-      return LightThemeColors();
-    }
-  }
-}
-
-class LightThemeColors extends ThemeColors {
-  LightThemeColors() {
-    super.primaryColor = const Color(0xFFeaf1ff);
-    super.primaryVariantColor = const Color(0xFF0e3146);
-    super.white = const Color(0xFFFFFFFF);
-    super.blue = const Color(0xFF4a85fd);
-    super.textColor = const Color(0xFF000000);
-  }
-}
-
-class DarkThemeColors extends ThemeColors {
-  DarkThemeColors() {
-    super.primaryColor = Color.fromARGB(255, 59, 59, 59);
-    super.primaryVariantColor = Color.fromARGB(255, 212, 212, 212);
-    super.white = const Color(0xFFFFFFFF);
-    super.blue = const Color(0xFF4a85fd);
-    textColor = Color.fromARGB(255, 218, 218, 218);
-  }
-}
 
 class ThemeBuilder {
   static ThemeData buildTheme(BuildContext context, Brightness brightness) {
